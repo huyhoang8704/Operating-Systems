@@ -115,6 +115,7 @@ addr_t alloc_mem(uint32_t size, struct pcb_t * proc) {
 		 * 	  to ensure accesses to allocated memory slot is
 		 * 	  valid. */
 	}
+	
 	pthread_mutex_unlock(&mem_lock);
 	return ret_mem;
 }
