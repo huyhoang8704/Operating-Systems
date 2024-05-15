@@ -3,7 +3,8 @@ add x y = x + y
 factorial n = product [1..n] -- Giai thừa
 
 ghci> :t 'a'
-'a' :: Char
+'a' :: Char , 'abc' -> error , "abc" -> string
+
 
 ghci> :t True
 True :: Bool

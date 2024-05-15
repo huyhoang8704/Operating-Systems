@@ -20,3 +20,14 @@ b = [6..10]
 -- xs = [(a,b,c) | c<- [1..10], b<- [1..10] , a<- [1..10] , a + b + c == 24 , a^2 + b^2 == c^2] 
 
 -- ! Bài 2
+-- Function to double a number
+double :: Int -> Int
+double x = x * 2
+
+-- Sample list of numbers
+numbers = [1, 3, 5, 7]
+
+-- Apply double to each element in numbers using map
+doubledNumbers = map double numbers
+
+print doubledNumbers  -- Output: [2,6,10,14]
